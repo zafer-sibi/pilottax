@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/styles.css" rel="stylesheet">
+    <title>/Pricing.html</title>
+</head>
+<body>
+
+    <header class="fixed top-0 left-0 right-0 w-full z-50">
+        <div class="flex justify-center mt-0" id="remove">
+          <div class="flex justify-between w-7/12 navbar-transition text-white mb-4">
+            
+            <div id="email-phone" class="mt-2 flex space-x-4 fade-transition">
+              <div class="cursor-pointer hover:text-[#f89a1c]">(603) 879 0059</div>
+              <div class="cursor-pointer hover:text-[#f89a1c]">support@pilot2290tax.com</div>
+            </div>
+          
+            <div id="auth" class=" mt-2 flex space-x-4 fade-transition items-center">
+              <div class="cursor-pointer hover:text-[#f89a1c]">login</div>
+              <div class="cursor-pointer hover:text-[#f89a1c]">register</div>
+            </div>
+    
+          </div>
+        </div>
+    
+        <div class="flex justify-center">
+          <div id="navbar" class="flex justify-around items-center p-5 m-0 bg-neutral-50 w-7/12 navbar-transition">
+    
+            <div>
+              <a href="./index.html">
+                <img class="w-36 cursor-pointer" src="../images/logo-gray.png" alt="logo">
+              </a>
+            </div>
+    
+            <div class="flex space-x-4">
+              <a href="./index.html" class="cursor-pointer">Home</a>
+              <a href="./pricing.html" class="cursor-pointer">Pricing</a>
+              <h4 class="cursor-pointer">Support</h4>
+            </div>
+    
+          </div>
+    
+        </div>
+      </header>
+
+    <div class="bg-[url('../images/bg-pricing-header.jpg')] bg-cover bg-top relative h-[68vh] bg-fixed">
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-center z-10 text-white space-y-4">
+            <div class="text-5xl">Owners & Operators</div>
+            <div class="text-6xl font-semibold">Easy Tax Filing For Everyone</div>
+            <div class="text-4xl">Start Now</div>
+            <div class="text-2xl">Get Your Schedule 1 In Minutes</div>
+        </div>
+        <div class="absolute inset-0 bg-[#000] opacity-70"></div>
+        <div class="absolute -bottom-8 left-[29rem]  bg-[#002E5B] p-4 w-[60rem]">
+            <div class="flex justify-between">
+                <p class="text-white text-2xl">Pricing Table</p>
+                <p class="text-white text-lg">Home / Pricing</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="mt-60">
+
+        <div>
+  
+          <div class="flex justify-center mb-16">
+            <div class="items-center text-4xl max-w-lg">
+              Owners and Operators(Form 2290 & Form 8849)
+            </div>
+          </div>
+  
+          <div class="flex justify-center mr-32">
+            <div class="grid grid-rows-8  min-w-[450px]">
+              <div class="flex justify-between space-x-24 p-2 text-medium text-lg">
+                <div>Vehicles</div>
+                <div>Processing Fee</div>
+              </div>
+              <div class="flex justify-between bg-[#f89a1c] p-2">
+                <div>1</div>
+                <div>$34.99</div>
+              </div>
+              <div class="flex justify-between p-2">
+                <div>2-10</div>
+                <div>$44.99</div>
+              </div>
+              <div class="flex justify-between  bg-[#f89a1c] p-2">
+                <div>11-24</div>
+                <div>$79.99</div>
+              </div>
+              <div class="flex justify-between p-2">
+                <div>25-100</div>
+                <div>$99.99</div>
+              </div>
+              <div class="flex justify-between bg-[#f89a1c] p-2">
+                <div>101-250</div>
+                <div>$199.99</div>
+              </div>
+              <div class="flex justify-between p-2">
+                <div>251-500</div>
+                <div>$399.99</div>
+              </div>
+              <div class="flex justify-between bg-[#f89a1c] p-2">
+                <div>500 & above</div>
+                <div>$599.99</div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </section>
+
+      <footer class="flex justify-evenly h-5/6 p-14 mt-40 p-32 bg-[#002E5B] text-white">
+        <div class="space-y-4">
+          <img  class="w-52"  src="../images/logo-gray.png" alt="logo">
+          <p class="max-w-96 ">We are here to take the hassle out of the tax filing process. Keeping in mind the busy timelines of truckers, we’ve created a web system with one-on-one support.</p>
+          <div>
+            <div class="">
+                phone symbol
+            </div>
+            <div class="">
+              <p>(603) 879 0059</p>
+              <a href="mailto:Support@pilot2290tax.com"></a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="mt-16">
+          <h3 class=" text-2xl mr-8 mb-4">Our Service</h3>
+          <div class="space-y-4">
+            <div>Home</div>
+            <div>Pricing</div>
+            <div>Support</div>
+            <div>Terms of Use</div>
+            <div>Privacy Policy</div>
+          </div>
+        </div>
+        <div class="mt-20">
+          <img class="h-28 w-28"  src="../images/irs.gif" alt="">
+          <img class="h-28 w-28" src="../images/visa.gif" alt="">
+          <img class="h-28 w-28" src="../images/net.gif" alt="">
+        </div>
+  
+        </div>
+      </footer>
+
+      <script>
+      
+        const navbar = document.getElementById('navbar');
+        const emailPhone = document.getElementById('email-phone');
+        const auth = document.getElementById('auth');
+        const forget = document.getElementById("remove");
+    
+      
+        window.addEventListener('scroll', function() {
+          console.log('Scroll position:', window.scrollY); 
+    
+          
+          if (window.scrollY > 200) {
+            navbar.classList.add("shadow-md")
+            navbar.classList.replace("w-7/12", "w-full");
+            forget.classList.add("hidden");
+            
+            emailPhone.classList.add('opacity-0');
+            auth.classList.add('opacity-0');
+            emailPhone.classList.add('pointer-events-none');
+            auth.classList.add('pointer-events-none');
+          } else {
+            navbar.classList.remove("shadow-md")
+            navbar.classList.replace("w-full", "w-7/12");
+            forget.classList.remove("hidden");
+            
+            emailPhone.classList.remove('opacity-0');
+            auth.classList.remove('opacity-0');
+            emailPhone.classList.remove('pointer-events-none'); 
+            auth.classList.remove('pointer-events-none');}
+        });
+      </script>
+
+    
+</body>
+</html>

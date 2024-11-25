@@ -19,8 +19,8 @@
         </div>
       
         <div id="auth" class=" mt-2 flex space-x-4 fade-transition items-center">
-          <div class="cursor-pointer hover:text-[#f89a1c]">login</div>
-          <div class="cursor-pointer hover:text-[#f89a1c]">register</div>
+          <a href="./login.html" class="cursor-pointer hover:text-[#f89a1c]">login</a>
+          <a href="./signup.html" class="cursor-pointer hover:text-[#f89a1c]">register</a>
         </div>
 
       </div>
@@ -30,12 +30,14 @@
       <div id="navbar" class="flex justify-around items-center p-5 m-0 bg-neutral-50 w-7/12 navbar-transition">
 
         <div>
-          <img class="w-36 cursor-pointer" src="../images/logo-gray.png" alt="logo">
+          <a href="./index.html">
+            <img class="w-36 cursor-pointer" src="../images/logo-gray.png" alt="logo">
+          </a>
         </div>
 
         <div class="flex space-x-4">
-          <h4 class="cursor-pointer">Home</h4>
-          <h4 class="cursor-pointer">Pricing</h4>
+          <a href="./index.html" class="cursor-pointer">Home</a>
+          <a href="./pricing.html" class="cursor-pointer">Pricing</a>
           <h4 class="cursor-pointer">Support</h4>
         </div>
 
@@ -45,9 +47,24 @@
   </header>
 
     
-    <div class="bg-[url('../images/banner-1.jpg')] bg-cover bg-center min-h-screen bg-fixed"></div>
+    <div class=" relative bg-[url('../images/banner-1.jpg')] bg-cover bg-center min-h-screen bg-fixed">
+      <div class="absolute inset-0 flex flex-col justify-center items-center text-center z-10 text-white space-y-4">
+        <div class="text-4xl">E-File Form 2290 With</div>
+        <div class="text-5xl font-semibold text-[#f89a1c]">Industry-Leading Professionals</div>
+        <div>
+          <div class="text-md">Easy & Secure | Dedocated Service | Proven Technology</div>
+          <div class="text-md">simplify Your E-Filing Routine By Tax Law expers</div>
+          <div class="text-md">Get Your Schedule-1 In Minutes</div>
+        </div>
+        <div>
+          <button type="button" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Start Now</button>
+        </div>
+        
+    </div>
+      <div class="absolute inset-0 bg-[#002e5baa] opacity-100"></div>
+    </div>
 
-    <div class="absolute inset-0 bg-[#002e5baa] opacity-100"></div>
+    
 
 
 
@@ -596,7 +613,7 @@
   
         
         if (window.scrollY > 200) {
-          console.log('Scrolled down, changing navbar width');
+          navbar.classList.add("shadow-md")
           navbar.classList.replace("w-7/12", "w-full");
           forget.classList.add("hidden");
           
@@ -605,7 +622,7 @@
           emailPhone.classList.add('pointer-events-none');
           auth.classList.add('pointer-events-none');
         } else {
-          console.log('At the top, resetting navbar width');
+          navbar.classList.remove("shadow-md")
           navbar.classList.replace("w-full", "w-7/12");
           forget.classList.remove("hidden");
           
