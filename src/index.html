@@ -4,46 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../dist/styles.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Welcome to pilot2290Tax.com</title>
+    
 </head>
 <body>
 
-    <header class="fixed left-0 right-0">
-        <div class="flex justify-center mt-4">
-            <div class="flex justify-between w-7/12">
-                <div class="mt-2 flex space-x-4 ">
-                    <div class="cursor-pointer">support@pilot2290tax.com</div>
-                    <div class="cursor-pointer">(603) 879 0059</div>
-                </div>
-                <div class="flex space-x-4">
-                    <div class="cursor-pointer">login</div>
-                    <div class="cursor-pointer">register</div>
-                </div>
-            </div>
-        </div>
+  <header class="fixed top-0 left-0 right-0 w-full z-50">
+    <div class="flex justify-center mt-0" id="remove">
+      <div class="flex justify-between w-7/12 navbar-transition">
         
-        <div class="flex justify-center">
-            
-                    <div class="flex justify-between items-center p-5 m-5 bg-neutral-50 w-7/12">
-    
-                        <div>
-                            <img  class="w-36 cursor-pointer" src="../images/logo-gray.png" alt="logo" >
-                        </div>
-    
-                        <div class="flex space-x-4">
-                            <h4 class="cursor-pointer">Home</h4>
-                            <h4 class="cursor-pointer">Pricing</h4>
-                            <h4 class="cursor-pointer">Support</h4>  
-                        </div>
-    
-                    </div>         
+        <div id="email-phone" class="mt-2 flex space-x-4 fade-transition">
+          <div class="cursor-pointer">support@pilot2290tax.com</div>
+          <div class="cursor-pointer">(603) 879 0059</div>
         </div>
-    </header>
+      
+        <div id="auth" class="flex space-x-4 fade-transition">
+          <div class="cursor-pointer">login</div>
+          <div class="cursor-pointer">register</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="flex justify-center">
+      <div id="navbar" class="flex justify-around items-center p-5 m-0 bg-neutral-50 w-7/12 navbar-transition">
+
+        <div>
+          <img class="w-36 cursor-pointer" src="../images/logo-gray.png" alt="logo">
+        </div>
+
+        <div class="flex space-x-4">
+          <h4 class="cursor-pointer">Home</h4>
+          <h4 class="cursor-pointer">Pricing</h4>
+          <h4 class="cursor-pointer">Support</h4>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
 
     
-    <div class="bg-[url('../images/banner-1.jpg')] bg-cover bg-center min-h-screen bg-fixed">
-        
-    </div>
+    <div class="bg-[url('../images/banner-1.jpg')] bg-cover bg-center min-h-screen bg-fixed"></div>
+
+    <div class="absolute inset-0 bg-[#002e5baa] opacity-50"></div>
+
 
 
 
@@ -147,19 +152,19 @@
       </div>
       <div class="mt-16">
         <div class="flex justify-center">
-          <div class="bg-[#f89a1c] text-center text-2xl font-medium h-12 w-2/4 items-center">Start</div>
+          <div class="bg-[#f89a1c] text-center text-2xl font-medium h-12 w-2/4 items-center"><P class="mr-16">Start</P></div>
         </div>
         <div class="flex flex-1 justify-center">
-          <div>
-            <div class="border p-4 mt-12"> 1 Go Online and Setup Your Account</div>
-            <div class="border p-4  mt-12"> 3 Enter Selected Tax form data</div>
-            <div class="border p-4  mt-12"> 5 Electronically file your return</div>
+          <div class="text-lg">
+            <div class="border p-7 mt-12 mr-20"> 1 Go Online and Setup Your Account</div>
+            <div class="border p-7  mt-12 mr-20"> 3 Enter Selected Tax form data</div>
+            <div class="border p-7  mt-12 mr-20"> 5 Electronically file your return</div>
           </div>
-          <div class="inline-block h-[400px] min-h-[1em] w-0.5 self-stretch bg-zinc-900"></div>
-          <div class="items-start">
-            <div class="border p-4  mt-12">2 Choose the Tax Form that you wnat to e-file</div>
-            <div class="border p-4 mt-12"> 4 Enter Vehicle information</div>
-            <div class="border p-4  mt-12"> 6 Download Schedule 1 at any time online</div>
+          <div class="inline-block h-[450px] min-h-[1em] w-0.5 self-stretch bg-zinc-900"></div>
+          <div class="items-start text-lg">
+            <div class="border p-7  mt-12  ml-20">2 Choose the Tax Form that you wnat to e-file</div>
+            <div class="border p-7 mt-12  ml-20"> 4 Enter Vehicle information</div>
+            <div class="border p-7  mt-12  ml-20"> 6 Download Schedule 1 at any time online</div>
           </div>
         </div>
       </div>
@@ -177,36 +182,184 @@
         </div>
         
         <div class="flex justify-center space-x-24">
-          <div class="space-y-4">
-            <div class="flex justify-center">
+          <div class="space-y-4 mb-8">
+            <div class="flex justify-center mb-8 ">
               <div class="text-2xl">Excise Tax(from 2290)</div>
             </div>
-            <div class="text-lg">Full Year Tax Payment</div>
-            <div class="text-lg">Partial Year Tax Payment</div>
-            <div class="text-lg">Amend Yax Return or Claim Credits</div>
-            <div class="text-lg">Get Schedule 1 in minutes</div>
-          </div>
-          <div class="space-y-4">
-            <div class="flex justify-center">
-              <div class="text-2xl">Ownwers & Operators</div>
+            <div class="flex flex-col space-y-4">
+              <!-- Row 1 -->
+              <div class="flex items-center space-x-4">
+                <!-- SVG in the first column -->
+                <div class="w-6 h-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" bg-[#f89a1c] w-full h-full">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </div>
+                <!-- Text in the second column -->
+                <div class="text-lg font-medium">
+                  Full Year Tax Payment
+                </div>
+              </div>
+            
+              <!-- Row 2 -->
+              <div class="flex items-center space-x-4">
+                <!-- SVG in the first column -->
+                <div class="w-6 h-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" bg-[#f89a1c] w-full h-full">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </div>
+                <!-- Text in the second column -->
+                <div class="text-lg font-medium">
+                  Partial Year Tax Payment
+                </div>
+              </div>
+            
+              <!-- Row 3 -->
+              <div class="flex items-center space-x-4">
+                <!-- SVG in the first column -->
+                <div class="w-6 h-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" bg-[#f89a1c] w-full h-full">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </div>
+                <!-- Text in the second column -->
+                <div class="text-lg font-medium">
+                  Amend Tax Return or Claim Credits
+                </div>
+              </div>
+            
+              <!-- Row 4 -->
+              <div class="flex items-center space-x-4">
+                <!-- SVG in the first column -->
+                <div class="w-6 h-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" bg-[#f89a1c] w-full h-full">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </div>
+                <!-- Text in the second column -->
+                <div class="text-lg font-medium">
+                  Get Schedule 1 in minutes
+                </div>
+              </div>
             </div>
-            <div class="text-lg">Save time and money</div>
-            <div class="text-lg">IRS certified Tax software</div>
-            <div class="text-lg">Safe and Secure e-file process</div>
-            <div class="text-lg">No hidden charges</div>
           </div>
-          <div class="space-y-4">
-            <div class="flex justify-center">
+            
+          <div class="space-y-4 mb-8">
+            <div class="flex justify-center mb-8 ">
+              <div class="text-2xl">Owners & Operators</div>
+            </div>
+            <div class="flex flex-col space-y-4">
+              <!-- Row 1 -->
+              <div class="flex items-center space-x-4">
+                <!-- SVG in the first column -->
+                <div class="w-6 h-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" bg-[#f89a1c] w-full h-full">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </div>
+                <!-- Text in the second column -->
+                <div class="text-lg font-medium">
+                  Save time and money
+                </div>
+              </div>
+            
+              <!-- Row 2 -->
+              <div class="flex items-center space-x-4">
+                <!-- SVG in the first column -->
+                <div class="w-6 h-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" bg-[#f89a1c] w-full h-full">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </div>
+                <!-- Text in the second column -->
+                <div class="text-lg font-medium">
+                  IRS certified Tax software
+                </div>
+              </div>
+            
+              <!-- Row 3 -->
+              <div class="flex items-center space-x-4">
+                <!-- SVG in the first column -->
+                <div class="w-6 h-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" bg-[#f89a1c] w-full h-full">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </div>
+                <!-- Text in the second column -->
+                <div class="text-lg font-medium">
+                  Safe and Secure e-file process
+                </div>
+              </div>
+            
+              <!-- Row 4 -->
+              <div class="flex items-center space-x-4">
+                <!-- SVG in the first column -->
+                <div class="w-6 h-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" bg-[#f89a1c] w-full h-full">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </div>
+                <!-- Text in the second column -->
+                <div class="text-lg font-medium">
+                  No hidden charges
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-4 mb-8">
+            <div class="flex justify-center mb-8 ">
               <div class="text-2xl">Tax Practitioner</div>
             </div>
-            <div class="text-lg">Single Account for multiple clients</div>
-            <div class="text-lg">File for unlimited businesses</div>
-            <div class="text-lg">Volume discount by total filings</div>
+            <div class="flex flex-col space-y-4">
+              <!-- Row 1 -->
+              <div class="flex items-center space-x-4">
+                <!-- SVG in the first column -->
+                <div class="w-6 h-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" bg-[#f89a1c] w-full h-full">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </div>
+                <!-- Text in the second column -->
+                <div class="text-lg font-medium">
+                  Single Account for multiple clients
+                </div>
+              </div>
+            
+              <!-- Row 2 -->
+              <div class="flex items-center space-x-4">
+                <!-- SVG in the first column -->
+                <div class="w-6 h-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="bg-[#f89a1c] w-full h-full">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </div>
+                <!-- Text in the second column -->
+                <div class="text-lg font-medium">
+                  File for unlimited businesses
+                </div>
+              </div>
+            
+              <!-- Row 3 -->
+              <div class="flex items-center space-x-4">
+                <!-- SVG in the first column -->
+                <div class="w-6 h-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="bg-[#f89a1c] w-full h-full">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </div>
+                <!-- Text in the second column -->
+                <div class="text-lg font-medium">
+                  Volume discount by total filings
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="flex justify-center mt-16">
-        <button type="button" class="text-white bg-[#f89a1c] font-medium rounded-full text-md px-5 py-2.5 text-center me-2 mb-2 text-black">Star Now</button>
+      <div class="flex justify-center mt-12">
+        <button type="button" class="text-white bg-[#f89a1c] font-medium rounded-full text-md px-5 py-2.5 text-center me-2 mb-2 text-black">Start Now</button>
       </div>
     </section>
 
@@ -215,33 +368,143 @@
       <div >
         <div class="flex justify-center mb-16">
           <div class="text-4xl font-medium">
-            FORMS-LIST & DETAILS
+            FORMS – LIST & DETAILS
           </div>
         </div>
         
         <div class="flex justify-center space-x-24">
-          <div class="space-y-4">
-            <div class="flex justify-center">
+          <div class="space-y-4 mb-8">
+            <div class="flex justify-center mb-8 ">
               <div class="text-2xl">IRS Form 2290</div>
             </div>
-            <div class="text-lg max-w-80">If the vehicle’s gross weight is 55,000 pounds or more</div>
-            <div class="text-lg max-w-80">Amendment - for total gross weight increase or suspended vehicles exceeding the mileage</div>
-            <div class="text-lg max-w-80">Claim a suspension - If the vehicle is destroyed, stolen, sold, or used 5000 miles or less</div>
-            <div class="text-lg max-w-80">Credit - previous years sold, stolen, or destroyed vehicles</div>
+            <div class="flex flex-col space-y-4">
+              <!-- Row 1 -->
+              <div class="flex items-center space-x-4">
+                <!-- SVG in the first column -->
+                <div class="w-6 h-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" bg-[#f89a1c] w-full h-full">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </div>
+                <!-- Text in the second column -->
+                <div class="text-lg font-medium max-w-96">
+                  If the vehicle’s gross weight is 55,000 pounds or more
+                </div>
+              </div>
+            
+              <!-- Row 2 -->
+              <div class="flex items-center space-x-4">
+                <!-- SVG in the first column -->
+                <div class="w-6 h-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" bg-[#f89a1c] w-full h-full">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </div>
+                <!-- Text in the second column -->
+                <div class="text-lg font-medium max-w-96">
+                  Amendment - for total gross weight increase or suspended vehicles exceeding the mileage
+                </div>
+              </div>
+            
+              <!-- Row 3 -->
+              <div class="flex items-center space-x-4">
+                <!-- SVG in the first column -->
+                <div class="w-6 h-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" bg-[#f89a1c] w-full h-full">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </div>
+                <!-- Text in the second column -->
+                <div class="text-lg font-medium max-w-96">
+                  Claim a suspension - If the vehicle is destroyed, stolen, sold, or used 5000 miles or less
+                </div>
+              </div>
+            
+              <!-- Row 4 -->
+              <div class="flex items-center space-x-4">
+                <!-- SVG in the first column -->
+                <div class="w-6 h-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" bg-[#f89a1c] w-full h-full">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </div>
+                <!-- Text in the second column -->
+                <div class="text-lg font-medium max-w-96">
+                  Credit - previous years sold, stolen, or destroyed vehicles
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="space-y-4">
-            <div class="flex justify-center">
+            
+          <div class="space-y-4 mb-8">
+            <div class="flex justify-center mb-8 ">
               <div class="text-2xl">IRS Form 8849</div>
             </div>
-            <div class="text-lg max-w-80">If the vehicle is sold, destroyed, or stolen</div>
-            <div class="text-lg max-w-80">If the vehicle is used less than 5000 miles (or 7500 miles for an agricultural vehicle)</div>
+            <div class="flex flex-col space-y-4">
+              <!-- Row 1 -->
+              <div class="flex items-center space-x-4">
+                <!-- SVG in the first column -->
+                <div class="w-6 h-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" bg-[#f89a1c] w-full h-full">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </div>
+                <!-- Text in the second column -->
+                <div class="text-lg font-medium max-w-96">
+                  If the vehicle is sold, destroyed, or stolen
+                </div>
+              </div>
+            
+              <!-- Row 2 -->
+              <div class="flex items-center space-x-4">
+                <!-- SVG in the first column -->
+                <div class="w-6 h-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" bg-[#f89a1c] w-full h-full">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </div>
+                <!-- Text in the second column -->
+                <div class="text-lg font-medium max-w-96">
+                  If the vehicle is used less than 5000 miles (or 7500 miles for an agricultural vehicle)
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="space-y-4">
-            <div class="flex justify-center">
+
+          <div class="space-y-4 mb-8">
+            <div class="flex justify-center mb-8 ">
               <div class="text-2xl">Heavy Vehicle Use Tax (HVUT)</div>
             </div>
-            <div class="text-lg max-w-80">Fleet Owners with 25 plus vehicles having a gross weight of 55,000 pounds or more must file Form 2290 electronically.</div>
-            <div class="text-lg max-w-80">Pay full-year tax by Aug 31 and avoid penalties and interest</div>
+            <div class="flex flex-col space-y-4">
+              <!-- Row 1 -->
+              <div class="flex items-center space-x-4">
+                <!-- SVG in the first column -->
+                <div class="w-6 h-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" bg-[#f89a1c] w-full h-full">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </div>
+                <!-- Text in the second column -->
+                <div class="text-lg font-medium max-w-96">
+                  Fleet Owners with 25 plus vehicles having a gross weight of 55,000 pounds or more must file Form 2290 electronically.
+
+                </div>
+              </div>
+            
+              <!-- Row 2 -->
+              <div class="flex items-center space-x-4">
+                <!-- SVG in the first column -->
+                <div class="w-6 h-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="bg-[#f89a1c] w-full h-full">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                  </svg>
+                </div>
+                <!-- Text in the second column -->
+                <div class="text-lg font-medium max-w-96">
+                  Pay full-year tax by Aug 31 and avoid penalties and interest
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -289,7 +552,7 @@
     <footer class="flex justify-evenly h-5/6 p-14 mt-32 p-32 bg-[#002E5B] text-white">
       <div class="space-y-4">
         <img  class="w-52"  src="../images/logo-gray.png" alt="logo">
-        <p class="max-w-44 ">We are here to take the hassle out of the tax filing process. Keeping in mind the busy timelines of truckers, we’ve created a web system with one-on-one support.</p>
+        <p class="max-w-96 ">We are here to take the hassle out of the tax filing process. Keeping in mind the busy timelines of truckers, we’ve created a web system with one-on-one support.</p>
         <div>
           <div class="">
               phone symbol
@@ -302,7 +565,7 @@
       </div>
 
       <div class="mt-16">
-        <h3 class=" text-2xl">Our Service</h3>
+        <h3 class=" text-2xl mr-8 mb-4">Our Service</h3>
         <div class="space-y-4">
           <div>Home</div>
           <div>Pricing</div>
@@ -319,5 +582,38 @@
 
       </div>
     </footer>
+
+    <script>
+      
+      const navbar = document.getElementById('navbar');
+      const emailPhone = document.getElementById('email-phone');
+      const auth = document.getElementById('auth');
+      const forget = document.getElementById("remove");
+  
+    
+      window.addEventListener('scroll', function() {
+        console.log('Scroll position:', window.scrollY); 
+  
+        
+        if (window.scrollY > 200) {
+          console.log('Scrolled down, changing navbar width');
+          navbar.classList.replace("w-7/12", "w-full");
+          forget.classList.add("hidden");
+          
+          emailPhone.classList.add('opacity-0');
+          auth.classList.add('opacity-0');
+          emailPhone.classList.add('pointer-events-none');
+          auth.classList.add('pointer-events-none');
+        } else {
+          console.log('At the top, resetting navbar width');
+          navbar.classList.replace("w-full", "w-7/12");
+          forget.classList.remove("hidden");
+          
+          emailPhone.classList.remove('opacity-0');
+          auth.classList.remove('opacity-0');
+          emailPhone.classList.remove('pointer-events-none'); 
+          auth.classList.remove('pointer-events-none');}
+      });
+    </script>
   </body>
 </html>
